@@ -9,3 +9,6 @@ import Lens.Micro
 import Lens.Micro.Extras hiding (preview, view)
 import Lens.Micro.Mtl
 import Lens.Micro.TH
+
+iso :: Functor f => (s -> a) -> (b -> t) -> (a -> f b) -> s -> f t
+iso f g = lens f (\_ b -> g b)
