@@ -3,6 +3,7 @@ module Control.Lens
     , module Lens.Micro.Extras
     , module Lens.Micro.Mtl
     , module Lens.Micro.TH
+    , iso
     ) where
 
 import Lens.Micro
