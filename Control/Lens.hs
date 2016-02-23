@@ -6,6 +6,6 @@ module Control.Lens
     ) where
 
 import Lens.Micro
-import Lens.Micro.Extras
+import Lens.Micro.Extras hiding (preview, view)
 import Lens.Micro.Mtl
 import Lens.Micro.TH
